@@ -1,0 +1,34 @@
+<Project>
+  <!-- Set the repository root into a variable -->
+  <PropertyGroup>
+    <SourceRoot>$(MSBuildThisFileDirectory)</SourceRoot>
+  </PropertyGroup>
+
+  <!-- Set common properties regarding assembly information and nuget packages -->
+  <PropertyGroup>
+    <Authors>River Tech</Authors>
+    <Product>Orleans Sample</Product>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Orleans Cloud-Computing Actor-Model Actors Distributed-Systems C# .NET Sample</PackageTags>
+  </PropertyGroup>
+
+  <!-- Common compile parameters -->
+  <PropertyGroup>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);1701;1702;1705;1591</NoWarn>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <!-- Shared Package Versions -->
+  <PropertyGroup>
+    <!-- vendors -->
+    <OrleansVersion>3.2.0</OrleansVersion>
+    <MicrosoftExtensionsVersion>3.1.4</MicrosoftExtensionsVersion>
+    <NewtonsoftJsonVersion>12.0.1</NewtonsoftJsonVersion>
+  </PropertyGroup>
+</Project>
